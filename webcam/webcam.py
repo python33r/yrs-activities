@@ -8,4 +8,4 @@ if response.status_code == 200:
     with open("webcam.jpg", "wb") as outfile:
         outfile.write(response.content)
 else:
-    print("Error: cannot access image")
+    print("Error: status code", response.status_code)
